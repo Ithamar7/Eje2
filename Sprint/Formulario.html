@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h3>TABLA PARA CALCULAR IMC</h3>
+
+    <p>Ingrese los datos como estudiante para tener un calculo:</p>
+    <form>
+      <table class="default">
+        <tr>
+          <td><label>Nombre completo: </label></td>
+
+          <td><input id="nombre_completo" type="text"  placeholder="Campo Obligatorio" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Correo electronico: </label></td>
+
+          <td><input id="correo" type="mail" required/></td>
+        </tr>
+
+        <tr>
+          <td><label>Fecha de nacimiento: </label></td>
+
+          <td><input id="fecha_nacimiento" type="date" required/></td>
+        </tr>
+        <tr>
+          <td><label>Edad: </label></td>
+
+          <td><input id="edad" type="number" required/></td>
+        </tr>
+        <tr>
+          <td><label>Carrera: </label></td>
+
+          <td><input id="carrera" type="text" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Jornada </label></td>
+          <td>
+            <label for="dia">Dia </label>
+            <input id="dia" type="checkbox" />
+            <label for="noche">Noche </label>
+            <input id="noche" type="checkbox" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Genero: </label></td>
+
+          <td>
+            <input type="radio" name="genero" id="femenino" />
+            <label for="femenino">Femenino</label> <br />
+            <input type="radio" name="genero" id="masculino" />
+            <label for="masculino">Masculino</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Peso: </label></td>
+
+          <td><input id="peso" type="number" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Talla: </label></td>
+
+          <td><input id="talla" type="number" /></td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar campos" />
+    </form>
+  </body>
+</html>
