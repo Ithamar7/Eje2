@@ -3,18 +3,26 @@
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <body bgcolor=#0099FF>
+    <title>FORMULARIO INGRESO</title>
   </head>
 
   <body>
-    <h3>FORMULARIO PARA CALCULAR IMC</h3>
-
-    <p>Ingrese los datos como estudiante para tener un calculo:</p>
+    
+    <div class="contenedor">
     <form>
+
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-success">Bienestar universitario</button>
+        <button type="button" class="btn btn-success">Enlace a la universidad</button>
+        <button type="button" class="btn btn-success">Derechos Reservados</button>
+      </div>
+    <h3 class="titulo">FORMULARIO PARA CALCULAR IMC</h3>
+
+    <p class="descripcion">Ingrese los datos como estudiante para tener un calculo:</p>
       <div class="mb-3">
         
           <label>Nombre completo: </label>
@@ -39,29 +47,29 @@
         
         <div class="mb-3">
           <label>Edad: </label>
-          <input id= "edad" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio">
+          <input id= "edad" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio" />
         </div>
         
-        <div class="mb-3">
+          <div class="mb-3">
 
-        <label for="Carrera" class="form-label">Selección de carrera</label>
-        <input class="form-control" list="datalistOptions" id="Carrera" placeholder="Carrera...">
-        <datalist id="datalistOptions">
-        <option value="Sistemas">
-        <option value="Electrónica">
-        <option value="Contabilidad">
-        <option value="Radiología">
-        <option value="Industrial">
-        </datalist>
-        </div>
+            <label for="Carrera" class="form-label">Selección de carrera</label>
+            <input class="form-control" list="datalistOptions" id="Carrera" placeholder="Carrera..." />
+            <datalist id="datalistOptions">
+            <option value="Sistemas">
+            <option value="Electrónica">
+            <option value="Contabilidad">
+            <option value="Radiología">
+            <option value="Industrial">
+            </datalist>
+          </div>
 
       <div class="mb-3">
-      <label for="Jornada" class="form-label">Seleccióne Jornada</label>
-      <input class="form-control" list="datalistOptions1" id="Jornada" placeholder="Jornada...">
-      <datalist id="datalistOptions1">
-      <option value="Diurna">
-      <option value="Nocturna">
-      </datalist>
+        <label for="Jornada" class="form-label">Seleccióne Jornada</label>
+        <input class="form-control" list="datalistOptions1" id="Jornada" placeholder="Jornada..." />
+        <datalist id="datalistOptions1">
+        <option value="Diurna">
+        <option value="Nocturna">
+        </datalist>
       </div>
 
     
@@ -70,14 +78,14 @@
 
         <label for="Genero" class="form-label">Genero</label></br>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+            <label class="form-check-label" for="flexRadioDefault1" >
               Hombre
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+            <label class="form-check-label" for="flexRadioDefault2" >
              Mujer
             </label>
           </div>
@@ -87,19 +95,20 @@
   
           <label for= "Peso" class="form-label"> Seleccióne Peso </label>
           <span class="form-label" id="Peso"> [Kg]</span>
-          <input id= "Peso" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio">
+          <input id= "Peso" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio" />
         </div>
 
         <div class="mb-3">
           <label for= "Talla" class="form-label"> Seleccióne Talla </label>
           <span class="form-label" id="Talla">[Cm]</span>
-          <input id= "Talla" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio">
+          <input id= "Talla" type="number" class="form-control" placeholder="Campo Obligatorio" aria-label="Campo Obligatorio" />
         </div>
 
-
-      <input type="submit" value="Enviar" />
-      <input type="reset" value="Borrar campos" />
-    </div>
+       <div class="botones"> 
+      <button type="button" class="btn btn-success">Enviar</button>
+      <button type="button" class="btn btn-dark">Borrar campos</button>
+      </div>
     </form>
+  </div>
   </body>
 </html>
