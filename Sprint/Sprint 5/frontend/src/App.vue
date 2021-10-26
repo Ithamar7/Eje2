@@ -1,11 +1,5 @@
 <template>
   <div class="container">
-    <!-- ---------------------------------------------------------- -->
-    <!-- <HelloWorld 
-      msg="Creador: Team mintic"
-    /> -->
-    <!-- <Pruebas /> -->
-    <!-- ----------------------------------------------------------- -->
     <nav >
       <ul class="nav justify-content-end">
         <li class="nav-item"><img  alt="App logo" src="./assets/logounab.jpg" width="100" height="80"></li>
