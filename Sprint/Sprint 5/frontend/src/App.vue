@@ -4,42 +4,34 @@
       <ul class="nav justify-content-end">
         <li class="nav-item"><img  alt="App logo" src="./assets/logounab.jpg" width="100" height="80"></li>
         <li class="nav-item"><h1>Cálculo IMC - UNAB</h1></li>
-        <li class="nav-item"><button class="btn btn-primary" v-on:click="muestraRegistro">Registro <i class="fa fa-plus-square" aria-hidden="true"></i></button></li>
+        <li class="nav-item"><button class="btn btn-orange" v-on:click="muestraRegistro">Registro <i class="fa fa-plus-square" aria-hidden="true"></i></button></li>
         <li class="nav-item"><button class="btn btn-success" v-on:click="muestraResultados">Resultados <i class="fa fa-list-alt" aria-hidden="true"></i></button></li>
-        <li class="nav-item"><button class="btn btn-orange" v-on:click="muestraGrafica">Gráfica <i class="fa fa-bar-chart" aria-hidden="true"></i></button></li>
       </ul>
     </nav>
+    <hr>
     <div>
       <Personas :token="token" v-if="token && registro"/>
       <Resultados :token="token" v-if="token && resultados"/>
-      <Graficas v-if="graficas"/>
     </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-// import Pruebas from './components/Pruebas.vue'
 import Personas from './components/Personas.vue'
 import Resultados from './components/Resultados.vue'
-import Graficas from './components/Graficas.vue'
 
 export default {
   name: 'App',
   data(){
     return{
       token: '',
-      registro: false,
+      registro: true,
       resultados: false,
-      graficas: true
     }
   },
   components: {
-    // HelloWorld,
-    // Pruebas
     Personas,
     Resultados,
-    Graficas,
   },
     async beforeCreate(){
     const requestOptions = {
@@ -74,18 +66,11 @@ export default {
     muestraRegistro(){
       this.registro = true;
       this.resultados = false;
-      this.graficas = false;
     },
     muestraResultados(){
       this.registro = false;
       this.resultados = true;
-      this.graficas = false;
     },
-    muestraGrafica(){
-      this.registro = false;
-      this.resultados = false;
-      this.graficas = true;
-    }
     },
 
 }
@@ -110,13 +95,6 @@ nav ul li{
   background-color: rgb(230, 131, 19);
     color: white;
   }
-
-/* #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 10px;
-} */
 
 
 </style>

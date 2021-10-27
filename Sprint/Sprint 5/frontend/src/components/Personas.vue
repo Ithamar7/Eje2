@@ -6,12 +6,11 @@
             <div class="input-group input-group-sm ">
                 <span class="input-group-text">Buscar por ID:</span>
                 <input class="form-control form-control-sm" v-model="id" id="id" type="number">
-                <button class="btn btn-primary" v-on:click="buscarPersona"><i class="fa fa-search" aria-hidden="true"></i>Buscar</button>
+                <button class="btn btn-orange" v-on:click="buscarPersona"><i class="fa fa-search" aria-hidden="true"></i>Buscar</button>
             </div>
         </div>
     </div><br>
 <!-- fin buscador -->
-        <!-- <p>{{token}}</p> -->
         <!-- formulario para capturar datos -->
         <form v-show="!search" class="animate__animated animate__zoomIn form-control">
         <h2>Ingresar datos</h2>

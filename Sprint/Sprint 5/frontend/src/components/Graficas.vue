@@ -1,6 +1,6 @@
 <template>
     <div class="container animate__animated animate__fadeIn">
-        <h2>Gráficas</h2>
+        <h3>Gráficas</h3>
         <div class="row">
             <div id="chart_col" class="col-md-8"></div>
             <div id="chart_pie" class="col-md-4"></div>
@@ -13,7 +13,7 @@
 export default{
     name:'Graficas',
     props: {
-
+        datos: Object,
     },
     data(){
 
@@ -22,7 +22,9 @@ export default{
 
     },
     methods:{
-
+carga(){
+    console.log(this.datos);
+}
     }
 }
 </script>
